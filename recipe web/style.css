@@ -1,0 +1,552 @@
+@font-face {
+  font-family: bebas;
+  src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: pop-b;
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: pop-m;
+  src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: pop-l;
+  src: url(./assets/fonts/Poppins-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: pop-m;
+  color: black;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webWrap {
+  width: 1920px;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+nav .my_container {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  height: 50px;
+  align-items: center;
+}
+nav .my_container .logo_box h1 {
+  font-size: 2rem;
+  font-family: pop-b;
+}
+nav .my_container .serch_box {
+  padding: 5px 0px;
+  gap: 1rem;
+}
+nav .my_container .serch_box .serch {
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  align-items: center;
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+nav .my_container .serch_box .serch input {
+  height: 35px;
+  width: 190px;
+  background: none;
+  border: none;
+}
+nav .my_container .serch_box .serch :focus {
+  border: none;
+  outline: none;
+}
+nav .my_container .serch_box .serch .serch-btn {
+  height: 35px;
+  width: 35px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: none;
+}
+nav .my_container .serch_box .serch .serch-btn .fa-magnifying-glass {
+  color: #121212;
+}
+nav .my_container .serch_box .serch .serch-btn:hover {
+  background: #2c2c2c;
+  color: white;
+}
+nav .my_container .serch_box .serch .serch-btn:hover .fa-solid {
+  color: white;
+}
+nav .my-menue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  display: flex;
+  padding: 5px 0px;
+}
+nav .my-menue .links {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  list-style-position: outside;
+}
+nav .my-menue .links li {
+  list-style: none;
+}
+nav .my-menue .links li a {
+  text-decoration: none;
+  font-family: pop-l;
+  font-size: 15px;
+  padding: 2px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.hero {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+.hero .hero-container {
+  width: 100%;
+  overflow: hidden;
+}
+.hero .hero-container .img_wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+}
+
+.foods-recipes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border: none;
+  padding: 2% 0px;
+}
+.foods-recipes .container {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border: none;
+}
+.foods-recipes .container .mycard-Wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 2%;
+}
+.foods-recipes .container .mycard-Wrap .card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1%;
+}
+.foods-recipes .container .mycard-Wrap .card .img-box {
+  width: 250px;
+  height: 250px;
+  background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+  background-size: contain;
+}
+.foods-recipes .container .mycard-Wrap .card .img_1 {
+  background-image: url(./assets/img/top-close-up-view-chicken-chicken-wings-potatoes-onion-herbs-vegetables-sauce-fork-knife.jpg);
+  background-size: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-repeat: no-repeat;
+}
+.foods-recipes .container .mycard-Wrap .card .img_2 {
+  background-image: url(./assets/img/tom-yum-snakehead-fish-hot-pot-thai-food.jpg);
+  background-size: contain;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-repeat: no-repeat;
+}
+.foods-recipes .container .mycard-Wrap .card .texs {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  gap: 10px;
+}
+.foods-recipes .container .mycard-Wrap .card .texs h4 {
+  font-size: 22px;
+}
+.foods-recipes .container .mycard-Wrap .card .texs p {
+  width: 240px;
+  font-size: 13px;
+  font-family: pop-l;
+}
+.foods-recipes .container .mycard-Wrap .card .texs .view-recipe {
+  padding: 3px 5px;
+  border: 1px solid #2c2c2c;
+  color: #2c2c2c;
+  background: white;
+  transition: all 0.2s ease-out;
+}
+.foods-recipes .container .mycard-Wrap .card .texs .view-recipe a {
+  text-decoration: none;
+  font-size: 12px;
+}
+.foods-recipes .container .mycard-Wrap .card .texs .view-recipe:hover {
+  background: #2c2c2c;
+  border: none;
+}
+.foods-recipes .container .mycard-Wrap .card .texs .view-recipe:hover a {
+  color: white;
+}
+
+.main-recipeSect {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2% 0px;
+  border: none;
+}
+.main-recipeSect .container {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border: none;
+}
+.main-recipeSect .container .content {
+  padding: 2% 0px;
+  width: 820px;
+  padding: 10px;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.main-recipeSect .container .content .titlle-row {
+  width: 100%;
+}
+.main-recipeSect .container .content .titlle-row h3 {
+  font-size: 2rem;
+}
+.main-recipeSect .container .content .img-box {
+  width: 800px;
+  min-width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+}
+.main-recipeSect .container .content .texts p {
+  font-family: pop-l;
+  font-size: 16px;
+}
+.main-recipeSect .container .content .ing-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-recipeSect .container .content .ing-box .title {
+  padding: 10px 0px;
+  width: 100%;
+}
+.main-recipeSect .container .content .ing-box .title h5 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.main-recipeSect .container .content .ing-box .list-box ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.main-recipeSect .container .content .ing-box .list-box ul li label {
+  font-family: pop-l;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/*  signup and ligon page in one section */
+.login-page-sec {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.login-page-sec::hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.login-page-sec .wrapper {
+  display: flex;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1% 0px 1% 0px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.login-page-sec .wrapper form {
+  position: relative;
+  padding: 1%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 500px;
+  min-width: 380PX;
+  height: -moz-max-content;
+  height: max-content;
+  flex-wrap: wrap;
+  background: #ffffff;
+  align-content: center;
+  border-radius: 10px;
+  gap: 5px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  transition: all 0.3s ease-in;
+}
+.login-page-sec .wrapper form .title-row {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.login-page-sec .wrapper form .title-row .closs-btn {
+  border: none;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.login-page-sec .wrapper form .title-row .closs-btn img {
+  height: 100%;
+  width: 100%;
+}
+.login-page-sec .wrapper form .inpt-pwd {
+  display: block;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  text-align: center;
+}
+.login-page-sec .wrapper form .inpt-pwd .pswrd-icon {
+  color: #444;
+  position: relative;
+  font-size: 12px;
+  top: -43px;
+  right: -43%;
+  z-index: 1;
+}
+.login-page-sec .wrapper form .inp {
+  position: relative;
+  margin: 10px 0px;
+  position: relative;
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #b0b3b6;
+  font-weight: 500;
+  color: black;
+  transition: all 0.1s ease-in;
+  outline: none;
+}
+.login-page-sec .wrapper form .inp:hover {
+  cursor: pointer;
+  border: 1px solid #037ce6;
+}
+.login-page-sec .wrapper form .inp:focus-within {
+  border: 2px solid #0160b2;
+  color: black;
+}
+.login-page-sec .wrapper form .frgt {
+  color: #037ce6;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.login-page-sec .wrapper form .Login-btn {
+  background: #0171d3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+}
+.login-page-sec .wrapper form .Login-btn a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 0px;
+  font-size: 14px;
+}
+.login-page-sec .wrapper form .Login-btn:hover {
+  box-shadow: #037ce6 0px 4px 10px;
+}
+.login-page-sec .wrapper form .lgn-fb {
+  margin-top: 20px;
+  text-decoration: none;
+  width: 100%;
+  background: #0160b2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  transition: all 0.2s ease-in;
+  position: relative;
+}
+.login-page-sec .wrapper form .lgn-fb:hover {
+  box-shadow: #0160b2 0px 4px 10px;
+}
+.login-page-sec .wrapper form .lgn-fb a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 0px;
+  font-size: 14px;
+}
+.login-page-sec .wrapper form .lgn-fb .fa-facebook {
+  color: white;
+  font-size: 19px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.login-page-sec .wrapper form .lgn-gle {
+  text-decoration: none;
+  justify-content: center;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  background: #444;
+  transition: all 0.2s ease-in;
+  position: relative;
+}
+.login-page-sec .wrapper form .lgn-gle:hover {
+  box-shadow: #444 0px 4px 10px;
+}
+.login-page-sec .wrapper form .lgn-gle .fa-google {
+  color: #b0b3b6;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  font-size: 18px;
+}
+.login-page-sec .wrapper form .lgn-gle a {
+  text-decoration: none;
+  color: #b0b3b6;
+  font-weight: 600;
+  font-size: 14px;
+}
+.login-page-sec .wrapper form .Signup-txt {
+  margin-top: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+}
+.login-page-sec .wrapper form .Signup-txt a {
+  text-decoration: none;
+  color: #037ce6;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.login-page-sec .wrapper form .under-line {
+  position: relative;
+  text-align: center;
+  font-size: 13px;
+  overflow: hidden;
+  margin-top: 15px;
+  width: 300px;
+  color: #b0b3b6;
+}
+.login-page-sec .wrapper form .under-line::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 0.9px;
+  position: absolute;
+  top: 45%;
+  background: #b0b3b6;
+}
+.login-page-sec .wrapper form .under-line::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 0.9px;
+  position: absolute;
+  top: 45%;
+  right: 0px;
+  background: #b0b3b6;
+}/*# sourceMappingURL=style.css.map */
